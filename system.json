@@ -1,0 +1,46 @@
+{
+    "id": "sombre-classic",
+    "title": "Sombre, la peur comme au cinéma",
+    "description" : "Sombre est un système rapide à prendre en main, punitif et potentielement mortel, visant à émuler l'atmosphère des films d'horreur",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "14.360",
+        "maximum": "15"
+    },
+    "version" : "1.0.8",
+    "authors": [
+        {
+            "name" : "Green-Suzaku",
+            "email": "",
+            "discord": ""
+    }
+    ],
+    "esmodules": ["module/sombre.js"],
+    "styles": ["css/sombre.css"],
+    "scripts": [],
+    "documentTypes": {
+        "Actor": {
+            "character": {},
+            "antagonist": {}
+        },
+        "Item" : {
+            "trait" : {},
+            "personnality": {}
+        }
+    },
+    "packs": [],
+    "languages": [],
+     "grid": {
+        "distance": 1,
+        "units": "m",
+        "type": 1,
+        "diagonals": 0
+    },
+    "primaryTokenAttribute": "Corps",
+    "secondaryTokenAttribute": "Esprit",
+    "url": "https://github.com/GreenDodow/sombre-classic",
+    "manifest": "https://raw.githubusercontent.com/Mathieu-Gilliot/sombre-classic-ttrpg/master/system.json",
+    "download": "https://github.com/Mathieu-Gilliot/sombre-classic-ttrpg/archive/refs/tags/1.0.8.zip",
+    "license": "",
+    "background" : "systems/sombre-classic/assets/Sombre_TEnet_noir.jpg"
+    }

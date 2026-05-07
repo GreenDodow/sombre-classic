@@ -1,0 +1,307 @@
+<form class="sombre-sheet">
+<nav class="sheet-tabs tabs sombre-tabs" data-group="secondary">
+  <a class="item active" data-tab="stats">Caractéristiques</a>
+  <a class="item" data-tab="mental">Bio/Inventaire</a>
+</nav>
+
+  <!-- HEADER -->
+  <header class="sheet-header">
+    <div class="nameContainer">
+      <label for="name" class="name-label section-label">NOM</label>
+      <input id="name" class="char-name" type="text" name="name" value="{{actor.name}}" title="{{actor.name}}"
+      placeholder="Nom du personnage" />
+    </div>
+   
+      <div class="portraitContainer">
+            <img class="portrait" src="{{actor.img}}" data-edit="img" alt="portrait" />
+      </div>
+  </header>
+ <section class="sheet-body">
+ <div class="tab active" data-group="secondary" data-tab="stats">
+  <!-- STATS -->
+  <label for="stat-section" class="section-label">CARACTERISTIQUES</label>
+  <section id="stat-section" class="stats section">
+    
+      <div class="radio-container">
+        <div class="inner-container label-container">
+          <button type="button" class="roll-corps rollButton body-label stat-label" title="Effectuer un test de corps">CORPS</button>
+        </div>
+        <div class="inner-container label-container">
+          <button type="button" class="roll-esprit rollButton spirit-label stat-label" title="Effectuer un test d'esprit">ESPRIT</button>
+        </div>
+      </div>   
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-12" name="system.attributes.Corps" value="12" checked
+            {{checked (eq system.attributes.Corps 12)}} />
+          <label class="radio-label" for="body-12">Indemne </br> - </br> 12</label>
+        </div>
+        <div class="inner-container">
+          <div class="radio-container"><input type="radio" class="radio-input" id="spirit-12"
+              name="system.attributes.Esprit" value="12" checked  {{checked (eq system.attributes.Esprit 12)}} />
+            <label class="radio-label" for="spirit-12">Equilibré </br> - </br>  12</label>
+          </div>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-11" name="system.attributes.Corps"
+            value="11" {{checked (eq system.attributes.Corps 11)}} />
+          <label class="radio-label" for="body-11">11</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-11"
+            name="system.attributes.Esprit" value="11"{{checked (eq system.attributes.Esprit 11)}} />
+          <label class="radio-label" for="spirit-11">11</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-10" name="system.attributes.Corps"
+            value="10" {{checked (eq system.attributes.Corps 10)}} />
+          <label class="radio-label" for="body-10">10</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-10"
+            name="system.attributes.Esprit" value="10" {{checked (eq system.attributes.Esprit 10)}}/>
+          <label class="radio-label" for="spirit-10">10</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-9" name="system.attributes.Corps"
+            value="9" {{checked (eq system.attributes.Corps 9)}} />
+          <label class="radio-label" for="body-9">09</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-9"
+            name="system.attributes.Esprit" value="9" {{checked (eq system.attributes.Esprit 9)}}/>
+          <label class="radio-label" for="spirit-9">09</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-8" name="system.attributes.Corps"
+            value="8" {{checked (eq system.attributes.Corps 8)}} />
+          <label class="radio-label" for="body-8">Blessé </br> - </br> 08</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-8"
+            name="system.attributes.Esprit" value="8" {{checked (eq system.attributes.Esprit 8)}}/>
+          <label class="radio-label" for="spirit-8">Perturbé </br> - </br> 08</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-7" name="system.attributes.Corps"
+            value="7" {{checked (eq system.attributes.Corps 7)}} />
+          <label class="radio-label" for="body-7">07</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-7"
+            name="system.attributes.Esprit" value="7" {{checked (eq system.attributes.Esprit 7)}}/>
+          <label class="radio-label" for="spirit-7">07</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-6" name="system.attributes.Corps"
+            value="6" {{checked (eq system.attributes.Corps 6)}} />
+          <label class="radio-label" for="body-6">06</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-6"
+            name="system.attributes.Esprit" value="6" {{checked (eq system.attributes.Esprit 6)}}/>
+          <label class="radio-label" for="spirit-6">06</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-5" name="system.attributes.Corps"
+            value="5" {{checked (eq system.attributes.Corps 5)}} />
+          <label class="radio-label" for="body-5">05</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-5"
+            name="system.attributes.Esprit" value="5" {{checked (eq system.attributes.Esprit 5)}}/>
+          <label class="radio-label" for="spirit-5">05</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-4" name="system.attributes.Corps"
+            value="4" {{checked (eq system.attributes.Corps 4)}} />
+          <label class="radio-label" for="body-4">Mutilé </br> - </br> 04</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-4"
+            name="system.attributes.Esprit" value="4" {{checked (eq system.attributes.Esprit 4)}}/>
+          <label class="radio-label" for="spirit-4">Désaxé </br> - </br> 04</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-3" name="system.attributes.Corps"
+            value="3" {{checked (eq system.attributes.Corps 3)}} />
+          <label class="radio-label" for="body-3">03</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-3"
+            name="system.attributes.Esprit" value="3" {{checked (eq system.attributes.Esprit 3)}}/>
+          <label class="radio-label" for="spirit-3">03</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-2" name="system.attributes.Corps"
+            value="2" {{checked (eq system.attributes.Corps 2)}} />
+          <label class="radio-label" for="body-2">02</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-2"
+            name="system.attributes.Esprit" value="2" {{checked (eq system.attributes.Esprit 2)}}/>
+          <label class="radio-label" for="spirit-2">02</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-1" name="system.attributes.Corps"
+            value="1" {{checked (eq system.attributes.Corps 1)}} />
+          <label class="radio-label" for="body-1">01</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-1"
+            name="system.attributes.Esprit" value="1" {{checked (eq system.attributes.Esprit 1)}}/>
+          <label class="radio-label" for="spirit-1">01</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-0" name="system.attributes.Corps"
+            value="0" {{checked (eq system.attributes.Corps 0)}} />
+          <label class="radio-label" for="body-0">Mort </br> - </br> 0</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-0"
+            name="system.attributes.Esprit" value="0" {{checked (eq system.attributes.Esprit 0)}}/>
+          <label class="radio-label" for="spirit-0">Fou </br> - </br> 0</label>
+        </div>
+      </div>
+  </section>
+<div class="adrenaline">
+  <label title="Les points sont utilisables via le bouton corps">Adrénaline</label>
+  <div class="dots">
+    <div class="dot {{adrenaline1}}"></div>
+    <div class="dot {{adrenaline2}}"></div>
+    <div class="dot {{adrenaline3}}"></div>
+    <button type="button" class="resources-reset" title="Restaurer vos ressources">
+       <span class="plus-icon">+</span>
+    </button>
+    {{#if (eq system.attributes.Desavantage "Cardiaque")}}
+    <div class="heart-container">
+  <svg class="heart-bolt" data-index="1" viewBox="0 0 100 100">
+    <path class="heart-shape"
+      d="M50 85 L20 55 A20 20 0 0 1 50 25 A20 20 0 0 1 80 55 Z"/>
+    <path class="bolt-shape"
+      d="M48 30 L35 55 H48 L42 75 L65 45 H52 Z"/>
+  </svg>
+</div>
+{{/if}}
+  </div>
+</div>
+  <!-- ÉTAT -->
+  <label for="personnality-section" class="section-label">PERSONNALITE</label>
+  <section class="personnality section">
+    <div class="personnalitySelects">
+      <div class="selectContainer">
+<label>Avantage</label>
+    <select name="system.attributes.Avantage" class="personnalitySelect">
+  {{#each positivesTraitsNames}}
+    <option title="{{this.trait.Description}}" value="{{this.trait.Name}}"
+      {{#if (eq this.trait.Name ../system.attributes.Avantage)}}selected{{/if}}>
+      {{this.trait.Name}}
+    </option>
+  {{/each}}
+</select>
+      </div>
+      
+<div class="selectContainer">
+<label>Désavantage</label>
+<select name="system.attributes.Desavantage" class="personnalitySelect">
+  {{#each negativesTraitsNames}}
+    <option title="{{this.trait.Description}}" value="{{this.trait.Name}}"
+      {{#if (eq this.trait.Name ../system.attributes.Desavantage)}}selected{{/if}}>
+      {{this.trait.Name}}
+    </option>
+  {{/each}}
+</select>
+</div>
+
+<div class="selectContainer">
+<label>Personnalité</label>
+<select name="system.attributes.Personnality" class="personnalitySelect">
+  {{#each personnalitiesNames}}
+    <option value="{{this.name}}"
+      {{#if (eq this.name ../system.attributes.Personnality)}}selected{{/if}}>
+      {{this.name}}
+    </option>
+  {{/each}}
+</select>
+</div>
+
+</div>
+<div>
+  <p class="personnalityDesc" >
+    {{personnalityDesc}}
+  </p>
+</div>
+ {{#if (eq system.attributes.Desavantage "Bipolaire")}}
+ <div class="selectContainer second-personnality">
+<label>Personnalité secondaire</label>
+<select name="system.attributes.SecondPersonnality" class="personnalitySelect">
+  {{#each secondPersonnalitiesNames}}
+    <option value="{{this.name}}"
+      {{#if (eq this.name ../system.attributes.SecondPersonnality)}}selected{{/if}}>
+      {{this.name}}
+    </option>
+  {{/each}}
+</select>
+</div>
+
+
+<div>
+<p class="personnalityDesc" >
+    {{secondPersonnalityDesc}}
+  </p>
+</div>
+  
+  {{/if}}
+
+
+
+  </section>
+ </div>
+ <div class="tab" data-group="secondary" data-tab="mental">
+  <div class="inventory-container">
+  <label class="section-label">BIOGRAPHIE</label>
+
+  <textarea
+    name="system.attributes.biography"
+    class="inventory-textarea"
+    placeholder="Décris ici le vécu de ton personnage."
+  >{{system.attributes.biography}}</textarea>
+</div>
+  <div class="inventory-container">
+  <label class="section-label">INVENTAIRE</label>
+
+  <textarea
+    name="system.inventory"
+    class="inventory-textarea"
+    placeholder="Décris ici l’équipement, les objets, les notes d’inventaire..."
+  >{{system.resources.inventory}}</textarea>
+</div>
+
+ </div>
+  </section>
+
+</form>

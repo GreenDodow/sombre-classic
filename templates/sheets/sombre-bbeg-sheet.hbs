@@ -1,0 +1,191 @@
+<form class="sombre-sheet antagonist">
+  <header class="sheet-header antagonist-header">
+    <div class="nameContainer">
+      <label for="name" class="name-label section-label">NOM</label>
+      <input id="name" class="char-name" type="text" name="name" value="{{actor.name}}" title="{{actor.name}}"
+      placeholder="Nom du personnage" />
+    </div>
+      <div class="portraitContainer">
+            <img class="portrait antagonist-portrait" src="{{actor.img}}" data-edit="img" alt="portrait" />
+      </div>
+  </header>
+  
+  <section id="theat-section" class="section threat">
+    <label for="threat-section" class="threat-label">NIVEAU DE MENACE</label>
+  <select name="system.attributes.Danger">
+  <option value="1" {{#if (eq system.attributes.Danger 1)}}selected{{/if}} title='Les laquets ont un nombre de dégâts maximum défini et leurs jets se font en fonction de leurs caractéristiques'>Laquet ({{system.attributes.MaxDammages}})</option>
+  <option value="2" {{#if (eq system.attributes.Danger 2)}}selected{{/if}} title='Les boss peuvent infliger des dégats variables comme les pj mais ils réalisent leurs jets sous leur maximum, quelles que soient leurs caractéristiques'>Boss</option>
+</select>
+  </section>
+
+<label for="stat-section" class="section-label">CARACTERISTIQUES</label>
+  <section id="stat-section" class="stats section">
+    
+      <div class="radio-container">
+        <div class="inner-container label-container">
+          <button type="button" class="roll-corps rollButton body-label stat-label" title="Effectuer un test de corps">CORPS</button>
+        </div>
+        <div class="inner-container label-container">
+          <button type="button" class="roll-esprit rollButton spirit-label stat-label" title="Effectuer un test d'esprit">ESPRIT</button>
+        </div>
+      </div>   
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-12" name="system.attributes.Corps" value="12" checked
+            {{checked (eq system.attributes.Corps 12)}} />
+          <label class="radio-label" for="body-12">Indemne </br> - </br> 12</label>
+        </div>
+        <div class="inner-container">
+          <div class="radio-container"><input type="radio" class="radio-input" id="spirit-12"
+              name="system.attributes.Esprit" value="12" checked  {{checked (eq system.attributes.Esprit 12)}} />
+            <label class="radio-label" for="spirit-12">Equilibré </br> - </br>  12</label>
+          </div>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-11" name="system.attributes.Corps"
+            value="11" {{checked (eq system.attributes.Corps 11)}} />
+          <label class="radio-label" for="body-11">11</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-11"
+            name="system.attributes.Esprit" value="11"{{checked (eq system.attributes.Esprit 11)}} />
+          <label class="radio-label" for="spirit-11">11</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-10" name="system.attributes.Corps"
+            value="10" {{checked (eq system.attributes.Corps 10)}} />
+          <label class="radio-label" for="body-10">10</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-10"
+            name="system.attributes.Esprit" value="10" {{checked (eq system.attributes.Esprit 10)}}/>
+          <label class="radio-label" for="spirit-10">10</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-9" name="system.attributes.Corps"
+            value="9" {{checked (eq system.attributes.Corps 9)}} />
+          <label class="radio-label" for="body-9">09</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-9"
+            name="system.attributes.Esprit" value="9" {{checked (eq system.attributes.Esprit 9)}}/>
+          <label class="radio-label" for="spirit-9">09</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-8" name="system.attributes.Corps"
+            value="8" {{checked (eq system.attributes.Corps 8)}} />
+          <label class="radio-label" for="body-8">Blessé </br> - </br> 08</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-8"
+            name="system.attributes.Esprit" value="8" {{checked (eq system.attributes.Esprit 8)}}/>
+          <label class="radio-label" for="spirit-8">Perturbé </br> - </br> 08</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-7" name="system.attributes.Corps"
+            value="7" {{checked (eq system.attributes.Corps 7)}} />
+          <label class="radio-label" for="body-7">07</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-7"
+            name="system.attributes.Esprit" value="7" {{checked (eq system.attributes.Esprit 7)}}/>
+          <label class="radio-label" for="spirit-7">07</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-6" name="system.attributes.Corps"
+            value="6" {{checked (eq system.attributes.Corps 6)}} />
+          <label class="radio-label" for="body-6">06</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-6"
+            name="system.attributes.Esprit" value="6" {{checked (eq system.attributes.Esprit 6)}}/>
+          <label class="radio-label" for="spirit-6">06</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-5" name="system.attributes.Corps"
+            value="5" {{checked (eq system.attributes.Corps 5)}} />
+          <label class="radio-label" for="body-5">05</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-5"
+            name="system.attributes.Esprit" value="5" {{checked (eq system.attributes.Esprit 5)}}/>
+          <label class="radio-label" for="spirit-5">05</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-4" name="system.attributes.Corps"
+            value="4" {{checked (eq system.attributes.Corps 4)}} />
+          <label class="radio-label" for="body-4">Mutilé </br> - </br> 04</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-4"
+            name="system.attributes.Esprit" value="4" {{checked (eq system.attributes.Esprit 4)}}/>
+          <label class="radio-label" for="spirit-4">Désaxé </br> - </br> 04</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-3" name="system.attributes.Corps"
+            value="3" {{checked (eq system.attributes.Corps 3)}} />
+          <label class="radio-label" for="body-3">03</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-3"
+            name="system.attributes.Esprit" value="3" {{checked (eq system.attributes.Esprit 3)}}/>
+          <label class="radio-label" for="spirit-3">03</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-2" name="system.attributes.Corps"
+            value="2" {{checked (eq system.attributes.Corps 2)}} />
+          <label class="radio-label" for="body-2">02</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-2"
+            name="system.attributes.Esprit" value="2" {{checked (eq system.attributes.Esprit 2)}}/>
+          <label class="radio-label" for="spirit-2">02</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-1" name="system.attributes.Corps"
+            value="1" {{checked (eq system.attributes.Corps 1)}} />
+          <label class="radio-label" for="body-1">01</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-1"
+            name="system.attributes.Esprit" value="1" {{checked (eq system.attributes.Esprit 1)}}/>
+          <label class="radio-label" for="spirit-1">01</label>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="body-0" name="system.attributes.Corps"
+            value="0" {{checked (eq system.attributes.Corps 0)}} />
+          <label class="radio-label" for="body-0">Mort </br> - </br> 0</label>
+        </div>
+        <div class="inner-container">
+          <input type="radio" class="radio-input" id="spirit-0"
+            name="system.attributes.Esprit" value="0" {{checked (eq system.attributes.Esprit 0)}}/>
+          <label class="radio-label" for="spirit-0">Fou </br> - </br> 0</label>
+        </div>
+      </div>
+  </section>
+
+</form>
