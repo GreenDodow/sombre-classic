@@ -15,13 +15,13 @@ Ce système Foundry VTT est une adaptation non-officielle destinée à faciliter
 
 ## ⚠️ Respect de l’œuvre originale
 
-Ce module respecte la volonté de l’auteur (Johan Scipion) :
+Ce module respecte la volonté de l’auteur de Sombre **Johan Scipion** :
 
 - Les **règles du jeu ne sont pas reproduites intégralement**
 - Les **contenus sensibles ou protégés ne sont pas redistribués**
 - Les **traits et personnalités ne sont pas inclus dans ce module**
 
-👉 Ces éléments doivent être importés par les utilisateurs eux-mêmes gra^ce à leurs ouvrages personnels.
+👉 Ces éléments doivent être importés par les utilisateurs eux-mêmes grâce à leurs ouvrages personnels.
 
 ---
 
@@ -31,14 +31,16 @@ Afin de respecter les droits de l’auteur, ce système ne fournit pas les liste
 
 - Traits
 - Personnalités
-- Contenus descriptifs complets issus du livre
+- Contenus descriptifs complets issus des fanzines
 - Rendez vous sur https://www.terresetranges.net/ pour vous procurer les livrets en physique
 
 ### ✔️ Chargement des Traits et Personnalités
 
-Les Traits et Personnalités doivent être importés manuellement dans Foundry via des compendiums utilisateur.
+Les Traits et Personnalités doivent être importés dans Foundry via des compendiums utilisateur.
 
 #### 🔧 Étapes d’installation :
+
+##### Manuellement
 
 1. Ouvrir l’onglet **Compendiums**
 2. Créer un nouveau compendium de type **Item**
@@ -68,6 +70,12 @@ Les Traits et Personnalités doivent être importés manuellement dans Foundry v
       "Desaxe": "Troisième stade"
     }
   }`
+
+##### Via le module conçu pour (recommandé)
+
+1. Se rendre sur le dépôt : https://github.com/GreenDodow/sombre-classic-compendium-module
+2. Suivre le mode d'emploi dans le readme
+
 ---
 
 ## 🎭 Philosophie du système
@@ -84,9 +92,9 @@ Ce module ne cherche pas à remplacer le livre de base, mais à :
 
 Sombre est une œuvre protégée de **Johan Scipion**.
 
-Ce projet est une adaptation technique non commerciale destinée à un usage privé ou de jeu de rôle personnel.
+Ce projet est une adaptation technique non commerciale destinée à un usage privé.
 
-Tous les droits du jeu original appartiennent à son auteur.
+Tous les droits du jeu original appartiennent à son auteur **Johan Scipion**.
 
 ---
 
