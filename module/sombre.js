@@ -30,11 +30,12 @@ class SombreActorSheet extends ActorSheet {
 
     const second = context.system.attributes.SecondPersonnality;
 
+    const hasCustomPersonnality = this.actor.system.attributes.customPersonnality.stage1.length > 0;
 
-    const firstFound = personnality.find(t => t.Name === current);
+    const firstFound = current == "Custom"? this.actor.system.attributes.customPersonnality : personnality.find(t => t.Name === current);
     const secondFound = personnality.find(t => t.Name === second);
 
-    const hasCustomPersonnality = this.actor.system.attributes.customPersonnality.stage1.length > 0;
+    
     context.personnalityDesc = firstFound != null ? getPersonnalitieDesc(this.actor.system.attributes.Personnality, this.actor.system.attributes.Esprit, hasCustomPersonnality, this.actor.system.attributes.customPersonnality,this.actor) : "";
     context.secondPersonnalityDesc = secondFound != null ? getPersonnalitieDesc(this.actor.system.attributes.Personnality, this.actor.system.attributes.Esprit, hasCustomPersonnality, this.actor.system.attributes.customPersonnality,this.actor) : "";
 
