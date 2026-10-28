@@ -7,7 +7,7 @@
         "verified": "14.360",
         "maximum": "15"
     },
-    "version" : "1.0.2",
+    "version" : "1.0.3",
     "authors": [
         {
             "name" : "Green-Suzaku",
@@ -40,7 +40,7 @@
     "secondaryTokenAttribute": "Esprit",
     "url": "https://github.com/GreenDodow/sombre-classic",
     "manifest": "https://raw.githubusercontent.com/GreenDodow/sombre-classic/main/system.json",
-    "download": "https://github.com/GreenDodow/sombre-classic/archive/refs/tags/1.0.2.zip",
+    "download": "https://github.com/GreenDodow/sombre-classic/archive/refs/tags/1.0.3.zip",
     "license": "",
     "background" : "systems/sombre-classic/assets/Sombre_TEnet_noir.jpg"
     }
