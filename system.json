@@ -7,7 +7,7 @@
         "verified": "14.360",
         "maximum": "15"
     },
-    "version" : "1.0.8",
+    "version" : "1.0.0",
     "authors": [
         {
             "name" : "Green-Suzaku",
@@ -39,8 +39,8 @@
     "primaryTokenAttribute": "Corps",
     "secondaryTokenAttribute": "Esprit",
     "url": "https://github.com/GreenDodow/sombre-classic",
-    "manifest": "https://raw.githubusercontent.com/Mathieu-Gilliot/sombre-classic-ttrpg/master/system.json",
-    "download": "https://github.com/Mathieu-Gilliot/sombre-classic-ttrpg/archive/refs/tags/1.0.8.zip",
+    "manifest": "https://raw.githubusercontent.com/GreenDodow/sombre-classic/main/system.json",
+    "download": "https://github.com/GreenDodow/sombre-classic/archive/refs/tags/1.0.0.zip",
     "license": "",
     "background" : "systems/sombre-classic/assets/Sombre_TEnet_noir.jpg"
     }
