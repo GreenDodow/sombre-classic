@@ -710,7 +710,7 @@ Hooks.once("init", () => {
 function getFirstStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push(PERS_CACHE[personnalitieName].Stages.Equilibre);
+    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Equilibre]);
   }
   return names;
 }
@@ -718,7 +718,7 @@ function getFirstStagePersonnalityNames() {
 function getSecondStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push(PERS_CACHE[personnalitieName].Stages.Perturbe);
+    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Perturbe]);
   }
   return names;
 }
@@ -726,10 +726,11 @@ function getSecondStagePersonnalityNames() {
 function getThridStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push(PERS_CACHE[personnalitieName].Stages.Desaxe);
+    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Desaxe]);
   }
   return names;
 }
+
 
 function buildOptions(list) {
   return list.map(v => `<option value="${v[0] + " : " + v[1]}" title="${v[1]}">${v[0]}</option>`).join("");
