@@ -47,13 +47,13 @@ export function getRollMessage(isBodyRoll, actor, rollStatus, total, dammages, d
         return `<div class="sombre-msg success">
                  <div class="sombre-header">${attackMessage}</div>
                 <div class="sombre-result">✔ Réussite ${total}/${actor.system.attributes.Corps}</div>
-                <div class="sombre-desc">${doDamage? "Le coup atteint sa cible et cause "+ dammages + " blessures":actor.name + "réussie son action"}</div>
+                <div class="sombre-desc">${doDamage? "Le coup atteint sa cible et cause "+ dammages + " blessures":actor.name + " réussie son action"}</div>
                 </div>`
     }else{
         return `<div class="sombre-msg fail">
                  <div class="sombre-header">${attackMessage}</div>
                 <div class="sombre-result">✖ Échec ${total}/${actor.system.attributes.Corps}</div>
-                <div class="sombre-desc">${doDamage? "Le coup rate sa cible...": actor.name + "rate son action..."}</div>
+                <div class="sombre-desc">${doDamage? "Le coup rate sa cible...": actor.name + " rate son action..."}</div>
                 </div>`
     }
   } else {
