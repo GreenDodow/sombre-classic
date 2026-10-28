@@ -32,7 +32,7 @@ class SombreActorSheet extends ActorSheet {
 
     const hasCustomPersonnality = this.actor.system.attributes.customPersonnality.stage1.length > 0;
 
-    const firstFound = current == "Custom"? this.actor.system.attributes.customPersonnality : personnality.find(t => t.Name === current);
+    const firstFound = current == "Custom"? this.actor.system.attributes.customPersonnality: personnality.find(t => t.Name === current);
     const secondFound = personnality.find(t => t.Name === second);
 
     
@@ -710,7 +710,7 @@ Hooks.once("init", () => {
 function getFirstStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Equilibre]);
+    names.push(PERS_CACHE[personnalitieName].Stages.Equilibre);
   }
   return names;
 }
@@ -718,7 +718,7 @@ function getFirstStagePersonnalityNames() {
 function getSecondStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Perturbe]);
+    names.push(PERS_CACHE[personnalitieName].Stages.Perturbe);
   }
   return names;
 }
@@ -726,7 +726,7 @@ function getSecondStagePersonnalityNames() {
 function getThridStagePersonnalityNames() {
   let names = [];
   for (var personnalitieName in PERS_CACHE) {
-    names.push([PERS_CACHE[personnalitieName].Name, PERS_CACHE[personnalitieName].Stages.Desaxe]);
+    names.push(PERS_CACHE[personnalitieName].Stages.Desaxe);
   }
   return names;
 }
